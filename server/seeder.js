@@ -22,11 +22,6 @@ Meteor.startup(function() {
 
       var user0Id = Meteor.users.findOne({username: 'Kaining'})._id;
 
-      Profiles.insert({
-        username: 'Kaining',
-        year: '1',
-        school:'School of Computing',
-      });
       Reviews.insert({
         reviewName: "CS1020: Data Structures and Algorithms",
         reviewPost: "Lectures are so hard to understand. tutorials are even harder. DONT EVEN BOTHER TRYING",
@@ -50,10 +45,11 @@ Meteor.startup(function() {
       Modules.insert({
         reviewName: "CS1020: Data Structures and Algorithms"
       });
+
       // User 1
       Accounts.createUser({
         username: 'User1',
-        email: 'user1@hotmail.com',
+        email: 'user1@example.com',
         password: 'password',
 
         profile: {
@@ -65,12 +61,6 @@ Meteor.startup(function() {
       });
 
       var user1Id = Meteor.users.findOne({username: 'User1'})._id;
-
-      Profiles.insert({
-        username: 'User1',
-        year: '4',
-        school:'School of Engineering',
-      });
 
       Reviews.insert({
         reviewName: "MA1312: Calculus with applications",
@@ -99,7 +89,7 @@ Meteor.startup(function() {
       // User 2
       Accounts.createUser({
         username: 'User2',
-        email: 'user2@hotmail.com',
+        email: 'user2@example.com',
         password: 'password',
 
         profile: {
@@ -111,12 +101,6 @@ Meteor.startup(function() {
       });
 
       var user2Id = Meteor.users.findOne({username: 'User2'})._id;
-
-      Profiles.insert({
-        username: 'User2',
-        year: '2',
-        school:'Faculty of Arts and Social Science',
-      });
 
       Reviews.insert({
         reviewName: "GER1000: Quantitative reasoning",
@@ -132,7 +116,7 @@ Meteor.startup(function() {
         date: date,
         createdAt: new Date(),
         vetted: 0,
-        likeScore: 11,
+        likeScore: 0,
 
         dislikeScore: 0,
         voted: ["User2"],
@@ -145,20 +129,14 @@ Meteor.startup(function() {
         password: 'kaikai',
 
         profile: {
-        	likeScore: 0,
-          dislikeScore: 0,
+        	likeScore: 5,
+          dislikeScore: 2,
           year: '2',
           school:'School of Computing',
         }
       });
 
       var user10Id = Meteor.users.findOne({username: 'kaikai'})._id;
-
-      Profiles.insert({
-          username: 'kaikai',
-        year: '2',
-        school:'School of Computing',
-      });
 
       Reviews.insert({
         reviewName: "CS1020: Data Structures and Algorithms",
@@ -188,7 +166,7 @@ Meteor.startup(function() {
         password: 'pampam',
 
         profile: {
-          likeScore: 5,
+          likeScore: 0,
           dislikeScore: 0,
           year: '2',
           school:'School of Computing',
@@ -197,16 +175,11 @@ Meteor.startup(function() {
 
       var user3Id = Meteor.users.findOne({username: 'pampam'})._id;
 
-      Profiles.insert({
-          username: 'pampam',
-        year: '2',
-        school:'School of Computing',
-      });
       Reviews.insert({
         reviewName: "CS1231: Discrete Structures",
         reviewPost: "Tutorials are extremely tough",
         semester: "AY 17/18 SEMESTER ONE",
-        diff: "Moderate",
+        diff: "Hard",
         recommendation: "3",
         workload: "Low",
         steepness: "High",
@@ -217,7 +190,7 @@ Meteor.startup(function() {
         createdAt: new Date(),
         vetted: 0,
         likeScore: 0,
-        dislikeScore: 5,
+        dislikeScore: 0,
         voted: ["pampam"],
         userId: user3Id,
       });
@@ -225,7 +198,7 @@ Meteor.startup(function() {
       // User 4
       Accounts.createUser({
         username: 'User4',
-        email: 'user4@hotmail.com',
+        email: 'user4@example.com',
         password: 'password',
 
         profile: {
@@ -237,11 +210,7 @@ Meteor.startup(function() {
       });
 
       var user4Id = Meteor.users.findOne({username: 'User4'})._id;
-      Profiles.insert({
-            username: 'User4',
-        year: '1',
-        school:'Faculty of Science',
-      });
+
       Reviews.insert({
         reviewName: "IS1103: Business Communications",
         reviewPost: "You can do your project during lecture time",
@@ -256,7 +225,7 @@ Meteor.startup(function() {
         date: date,
         createdAt: new Date(),
         vetted: 1,
-        likeScore: 8,
+        likeScore: 0,
         dislikeScore: 0,
         voted: ["User4"],
         userId: user4Id,
@@ -266,7 +235,7 @@ Meteor.startup(function() {
       // User 5
       Accounts.createUser({
         username: 'User5',
-        email: 'user5@hotmail.com',
+        email: 'user5@example.com',
         password: 'password',
 
         profile: {
@@ -278,18 +247,14 @@ Meteor.startup(function() {
       });
 
       var user5Id = Meteor.users.findOne({username: 'User5'})._id;
-      Profiles.insert({
-        username: 'User5',
-        year: '3',
-        school:'School of Design and Environment',
-      });
+
       Reviews.insert({
-       reviewName: "CFG1010: Roots and Wings",
+       reviewName: "CFG1010 Roots and Wings",
         reviewPost: "Tutorials are extremely tough",
         semester: "AY 17/18 SEMESTER ONE",
-        diff: "Easy",
+        diff: "Low",
         recommendation: "3",
-        workload: "Low",
+        workload: "low",
         steepness: "High",
         author: "User5",
         year: '3',
@@ -297,7 +262,7 @@ Meteor.startup(function() {
         date: date,
         createdAt: new Date(),
         vetted: 1,
-        likeScore: 7,
+        likeScore: 0,
         dislikeScore: 0,
         voted: ["User5"],
         userId: user5Id,
