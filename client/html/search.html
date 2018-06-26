@@ -73,6 +73,7 @@
 			<p class="recommendation">Recommendation Level: {{recommendation}}</p>
 			<p class="diff">Difficulty Level: {{diff}}</p>
 			<p class="workload">Workload: {{workload}}</p>
+			<p class="webcast">Availabilty of Webcast: {{webcast}}</p>
 			<p class="steepness">Steepness of Bellcurve: {{steepness}}</p>
 
 		</div>
@@ -181,6 +182,13 @@
 									<option>Low</option>
 								 </select>
 
+								 <h6 class="webcast">Availability of Webcast</h6>
+											<select class="form-control" id="webcast" name="webcast">
+												<option selected>All</option>
+												<option>Yes</option>
+												<option>No</option>
+											</select>
+
 								 <h6 class="steepness">Steepness of Bellcurve:</h6>
 								 <select class="form-control" id="steepness" name="steepness">
 									<option selected>All</option>
@@ -208,6 +216,7 @@
 			<p class="recommendation">Recommendation Level: {{recommendation}}</p>
 			<p class="diff">Difficulty Level: {{diff}}</p>
 			<p class="workload">Workload: {{workload}}</p>
+		  <p class="webcast">Availabilty of Webcast: {{webcast}}</p>
 			<p class="steepness">Steepness of Bellcurve: {{steepness}}</p>
 
 		</div>
@@ -316,6 +325,11 @@
 					<span class="posy blue">Difficulty: {{diff}}</span>
 				</div>
 					<br>
+
+					<div>
+						<span class="posy blue">Availabilty of Webcast: {{webcast}}</span>
+					</div>
+						<br>
 
 			<div>
 				<span class="posy blue">{{reviewPost}}</span>

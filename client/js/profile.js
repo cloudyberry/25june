@@ -128,6 +128,7 @@ Template.profile.events({
 			var editDiff = event.target.diff.value;
 			var editWorkload = event.target.workload.value;
 			var editSteepness = event.target.steepness.value;
+			var editWebcast = event.target.webcast.value;
 			var editPost = event.target.reviewPost.value;
 		/*var saveReview = function() {
 			var editReview = {
@@ -143,7 +144,7 @@ Template.profile.events({
 		var thisReview = Reviews.findOne({_id: this._id})._id;
 		//pass parameters to the method called editReview
 		//editName, editSem, editRecommendation, editDiff, editWorkload, editSteepness, editPost
-		Meteor.call("editReview",thisReview, editName, editSem, editRecommendation, editDiff, editWorkload, editSteepness, editPost);
+		Meteor.call("editReview",thisReview, editName, editSem, editRecommendation, editDiff, editWorkload, editSteepness, editWebcast, editPost);
 		Bert.alert("Your Review Was Edited", "success", "growl-top-right");
 		Session.set('editReviewId', null);
 	}

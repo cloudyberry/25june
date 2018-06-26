@@ -96,6 +96,7 @@ Template.search.events({
 		var recommendation = event.target.recommendation.value;
 		var diff = event.target.diff.value;
 		var workload = event.target.workload.value;
+		var webcast = event.target.webcast.value;
 		var steepness = event.target.steepness.value;
 		/*var thisReview = Reviews.find(
 			{"reviewName": reviewName,
@@ -106,7 +107,7 @@ Template.search.events({
 			"steepness": steepness})._id;*/
 		//add new column and labels!
 		Meteor.call('endMatch');
-		Meteor.call('returnMatch', recommendation, diff, workload, steepness);
+		Meteor.call('returnMatch', recommendation, diff, workload, webcast, steepness);
 
 		return false; // prevent submit
 	}

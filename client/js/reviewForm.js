@@ -15,12 +15,13 @@ Template.reviewForm.events({
 		var workload = event.target.workload.value;
 		var steepness = event.target.steepness.value;
 		var reviewPost = event.target.reviewPost.value;
+		var webcast = event.target.webcast.value;
 		//add new column and labels!
 
 		if (isNotEmpty(reviewName) &&
 			isNotEmpty(reviewPost) && isNotEmpty(semester)) {
 
-			Meteor.call('addUnapproved',hideName, reviewName, semester, recommendation, diff, workload, steepness, reviewPost);
+			Meteor.call('addUnapproved',hideName, reviewName, semester, recommendation, diff, workload, steepness, reviewPost, webcast);
 			//clear form
 			/*if (event.target.hideName.value===true) {
 				Meteor.call('hideName', thisReview);
