@@ -14,9 +14,9 @@
 			{{/if}}
 
 			{{#if nonAdmin}}
-			<a class="link-blue" href="/reviews" id="reviews-link"><span class="glyphicon glyphicon-time" style="font-size:36px"></span>Latest</a>
-			<a class="link-yellow" href="/rankings" id="rankings-link"><span class="glyphicon glyphicon-pushpin" style="font-size:36px"></span>Featured</a><!--Change to featured posts-->
-			<a class="link-green" href="/search" id="search-link"><span class="glyphicon glyphicon-search" style="font-size:36px"></span>Search</a>
+			<a class="link-blue" href="/reviews" id="reviews-link"><i class="fa fa-clock-o" style="font-size:40px"></i>Latest</a>
+			<a class="link-yellow" href="/rankings" id="rankings-link"><i class="fa fa-gittip" style="font-size:40px"></i>Featured</a><!--Change to featured posts-->
+			<a class="link-green" href="/search" id="search-link"><i class="fa fa-search" style="font-size:40px"></i>Search</a>
 		  {{/if}}
 
 			{{#if admin}}
@@ -26,9 +26,9 @@
 			{{/if}}
 
 			{{#if currentUser}}
-			<a class="link-purple logout" href="#" id="logout-link"><span class="glyphicon glyphicon-log-out" style="font-size:36px"></span>Logout</a>
+			<a class="link-purple" href="#" id="logout-link"><i class="fa fa-sign-out" style="font-size:36px"></i>Logout</a>
 			{{else}}
-			<a class="" href="/" id="login-link"><i class="fa fa-sign-in"></i>Login</a>
+			<a class="link-pink" href="/" id="login-link"><i class="fa fa-sign-in"></i>Login</a>
 			{{/if}}
 		</div>
 	</aside>

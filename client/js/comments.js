@@ -13,7 +13,7 @@ Template.comments.helpers({
 
     comms: function() {
 			var thisReview = Reviews.findOne({_id: this._id})._id;
-		      var comms = Comments.find({_id: thisReview}, {sort: {createdAt: -1}});
-		      return comms;
+      var comms = Comments.find({post_id: thisReview}, {sort: {createdAt: -1}});
+      return comms;
     },
 });

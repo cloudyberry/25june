@@ -79,38 +79,45 @@
 
 /* Link Colors */
 .sidebar-left .sidebar-links a.link-blue {
-  border-color: #2495d0;
+  border-color: #C75C0C;
 }
 .sidebar-left .sidebar-links a.link-blue i.fa {
-  color: #2495d0;
+  color: #C75C0C;
 }
 
 .sidebar-left .sidebar-links a.link-red {
-  border-color: #ec4a4d;
+  border-color: #900C3F  ;
 }
 .sidebar-left .sidebar-links a.link-red i.fa {
-  color: #ec4a4d;
+  color: #900C3F  ;
 }
 
 .sidebar-left .sidebar-links a.link-yellow {
-  border-color: #f7cb5b;
+  border-color: #006989;
 }
 .sidebar-left .sidebar-links a.link-yellow i.fa {
-  color: #f7cb5b;
+  color: #006989;
 }
 
 .sidebar-left .sidebar-links a.link-green {
-  border-color: #52b859;
+  border-color: #228B22;
 }
 .sidebar-left .sidebar-links a.link-green i.fa {
-  color: #52b859;
+  color: #228B22;
 }
 
 .sidebar-left .sidebar-links a.link-purple {
-  border-color: #915ba2;
+  border-color: #510865;
 }
 .sidebar-left .sidebar-links a.link-purple i.fa {
-  color: #915ba2;
+  color: #510865;
+}
+
+.sidebar-left .sidebar-links a.link-pink {
+  border-color: #900C3F;
+}
+.sidebar-left .sidebar-links a.link-pink i.fa {
+  color: #900C3F;
 }
 
 /* Making the sidebar responsive */
