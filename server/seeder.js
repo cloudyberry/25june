@@ -68,7 +68,7 @@ Meteor.startup(function() {
         reviewPost: "Prof makes the lectures very interesting",
         semester: "AY 17/18 SEMESTER TWO",
         diff: "Moderate",
-        recommendation: "5",
+        recommendation: "5 (Being the most recommended)",
         workload: "Low",
         webcast: "Yes",
         steepness: "High",
