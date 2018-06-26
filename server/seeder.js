@@ -16,7 +16,7 @@ Meteor.startup(function() {
         	likeScore: 3,
           dislikeScore: 0,
           year: '1',
-          school:'School of Computing',
+          school:'Computing',
         }
       });
 
@@ -49,14 +49,14 @@ Meteor.startup(function() {
       // User 1
       Accounts.createUser({
         username: 'User1',
-        email: 'user1@example.com',
+        email: 'user1@hotmail.com',
         password: 'password',
 
         profile: {
           likeScore: 0,
           dislikeScore: 0,
           year: '4',
-          school:'School of Engineering',
+          school:'Engineering',
         }
       });
 
@@ -72,7 +72,7 @@ Meteor.startup(function() {
         steepness: "High",
         author: "User1",
         year: '4',
-        school:'School of Engineering',
+        school:'Engineering',
         date: date,
         createdAt: new Date(),
         vetted: 1,
@@ -89,14 +89,14 @@ Meteor.startup(function() {
       // User 2
       Accounts.createUser({
         username: 'User2',
-        email: 'user2@example.com',
+        email: 'user2@hotmail.com',
         password: 'password',
 
         profile: {
           likeScore: 0,
           dislikeScore: 0,
           year: '2',
-          school:'Faculty of Arts and Social Science',
+          school:'Arts and Social Sciences',
         }
       });
 
@@ -112,7 +112,7 @@ Meteor.startup(function() {
         steepness: "High",
         author: "User2",
         year: '2',
-        school:'Faculty of Arts and Social Science',
+        school:'Arts and Social Sciences',
         date: date,
         createdAt: new Date(),
         vetted: 0,
@@ -132,7 +132,7 @@ Meteor.startup(function() {
         	likeScore: 5,
           dislikeScore: 2,
           year: '2',
-          school:'School of Computing',
+          school:'Computing',
         }
       });
 
@@ -148,7 +148,7 @@ Meteor.startup(function() {
         steepness: "High",
         author: "Kaikai",
         year: '2',
-        school:'School of Computing',
+        school:'Dentistry',
         date: date,
         createdAt: new Date(),
         vetted: 0,
@@ -169,7 +169,7 @@ Meteor.startup(function() {
           likeScore: 0,
           dislikeScore: 0,
           year: '2',
-          school:'School of Computing',
+          school:'Computing',
         }
       });
 
@@ -185,7 +185,7 @@ Meteor.startup(function() {
         steepness: "High",
         author: "pampam",
         year: '2',
-        school:'School of Computing',
+        school:'Computing',
         date: date,
         createdAt: new Date(),
         vetted: 0,
@@ -198,14 +198,14 @@ Meteor.startup(function() {
       // User 4
       Accounts.createUser({
         username: 'User4',
-        email: 'user4@example.com',
+        email: 'user4@hotmail.com',
         password: 'password',
 
         profile: {
           likeScore: 0,
           dislikeScore: 0,
           year: '1',
-          school:'Faculty of Science',
+          school:'Science',
         }
       });
 
@@ -221,7 +221,7 @@ Meteor.startup(function() {
         steepness: "High",
         author: "User4",
         year: '1',
-        school:'Faculty of Science',
+        school:'Science',
         date: date,
         createdAt: new Date(),
         vetted: 1,
@@ -235,14 +235,14 @@ Meteor.startup(function() {
       // User 5
       Accounts.createUser({
         username: 'User5',
-        email: 'user5@example.com',
+        email: 'user5@hotmail.com',
         password: 'password',
 
         profile: {
           likeScore: 0,
           dislikeScore: 0,
           year: '3',
-          school:'School of Design and Environment',
+          school:'Design & Environment',
         }
       });
 
@@ -258,7 +258,7 @@ Meteor.startup(function() {
         steepness: "High",
         author: "User5",
         year: '3',
-        school:'School of Design and Environment',
+        school:'Design & Environment',
         date: date,
         createdAt: new Date(),
         vetted: 1,
@@ -271,7 +271,7 @@ Meteor.startup(function() {
       // Admin
             Accounts.createUser({
               username: 'Admin',
-              email: 'admin@example.com',
+              email: 'admin@hotmail.com',
               password: 'kainingandpam',
               isDefault: 'true',
 
