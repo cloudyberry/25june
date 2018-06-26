@@ -36,7 +36,7 @@ Meteor.startup(function() {
         date: date,
         createdAt: new Date(),
         vetted: 1,
-        likeScore: 0,
+        likeScore: 5,
         dislikeScore: 0,
         voted: ["Kaining"],
         userId: user0Id,
@@ -76,7 +76,7 @@ Meteor.startup(function() {
         date: date,
         createdAt: new Date(),
         vetted: 1,
-        likeScore: 0,
+        likeScore: 7,
 
         dislikeScore: 0,
         voted: ["User1"],
