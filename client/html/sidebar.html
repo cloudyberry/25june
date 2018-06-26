@@ -1,6 +1,6 @@
 <template name="sidebar">
 	<aside class="sidebar-left">
-	<img src="cookie.png" class="icon">
+	<img src="m4.png" class="icon">
 	<a class="company-logo" href="/reviews">NUSModRev</a>
 		<div class="sidebar-links">
 
@@ -20,8 +20,8 @@
 		  {{/if}}
 
 			{{#if admin}}
-			<a class="link-green" href="/unapproved" id="unapproved-link"><i class="fa fa-columns"></i>unapproved</a>
-			<a class="link-blue" href="/approved" id="approved-link"><i class="fa fa-columns"></i>approved</a>
+			<a class="link-unapproved" href="/unapproved" id="unapproved-link"><i class="fa fa-columns"></i>unapproved</a>
+			<a class="link-approved" href="/approved" id="approved-link"><i class="fa fa-columns"></i>approved</a>
 			{{else}}
 			{{/if}}
 
