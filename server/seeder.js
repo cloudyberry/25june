@@ -217,7 +217,7 @@ Meteor.startup(function() {
       var user4Id = Meteor.users.findOne({username: 'User4'})._id;
 
       Reviews.insert({
-        reviewName: "IS1103: Business Communications",
+        reviewName: "IS1103: Computing and Society",
         reviewPost: "You can do your project during lecture time",
         semester: "AY 17/18 SEMESTER ONE",
         diff: "Moderate",
