@@ -27,10 +27,7 @@ Template.reviewForm.events({
 				Meteor.call('hideName', thisReview);
 			}*/
 
-			event.target.reviewName.value = "";
-			event.target.reviewPost.value = "";
-			event.target.semester.value = "";
-
+	
 			Bert.alert("Your Review Was Posted!", "success", "growl-top-right");
 
 		} else {
